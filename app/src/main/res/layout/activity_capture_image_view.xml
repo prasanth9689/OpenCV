@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CaptureImageViewActivity">
+
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageView"/>
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/btn_back"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:onClick="onClickDebug"
+        android:text="Debug"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:onClick="onClickReTake"
+            android:background="@drawable/btn_radius_white"
+            android:text="RE-TAKE"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:onClick="onClickKeep"
+            android:background="@drawable/btn_radius_white"
+            android:text="KEEP"/>
+    </LinearLayout>
+
+</RelativeLayout>
